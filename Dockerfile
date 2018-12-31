@@ -10,5 +10,5 @@ RUN pip list && mkdir /notebook
 
 EXPOSE 8888
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+#ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["jupyter", "lab", "--allow-root", "--notebook-dir=/notebook", "--ip=0.0.0.0" "--no-browser"]

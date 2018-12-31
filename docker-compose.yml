@@ -7,4 +7,4 @@ services:
       - ${PWD}:/notebook
     ports:
       - "8888:8888"
-#    command: sleep 1000
+    command: sleep 1000
