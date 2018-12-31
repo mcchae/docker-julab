@@ -10,4 +10,4 @@ RUN apk --update add --virtual build-dependencies alpine-sdk  \
 EXPOSE 8888
 
 #ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["jupyter","lab", "--allow-root", "--notebook-dir=/notebook"]
+CMD ["jupyter","lab", "--allow-root", "--notebook-dir=/notebook", "--ip=0.0.0.0" "--no-browser"]
