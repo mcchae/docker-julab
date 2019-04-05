@@ -4,6 +4,6 @@ services:
     image: "mcchae/julab"
     hostname: "jupyterlab"
     volumes:
-      - ${PWD}:/notebook
+      - ../python-bootcamp:/notebook
     ports:
       - "8888:8888"
